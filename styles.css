@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+    /* bg colors */
+    --background: #02050e;
+    --primary: #1e50ff;
+    --secondary: #272d37;
+    --btn-bg: #050d26;
+    --bg-azul-10: #e9eeff;
+    --bg-white: #fff;
+    --bg-electric: #f0fbff;
+    --nav-bg: #0f1525;
+    /* Text colors */
+    --text-clar: #d68e35;
+    --text-white: #f3f4f6;
+
+    /* Decoration */
+    --fire: #ff6d00;
+    --electric: #64d3ff;
+}
+/*Reinicio el CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+/*Llamo a la etiqueta header y le aplico las caract generales*/
+header{
+    background: var(--secondary);
+    width: 100%;/*Indico quue el header se estire al 100%*/
+    display: flex;/*Display, justify y align van siempre juntas las 3*/
+    justify-content: space-between; /*Separa elementos hijos (imagen y lista)*/
+    align-items: center; /*alinea elementos al centro*/
+    height: 90px;/*Altura del HEADER*/
+    padding: 0 30px; /*Separación de los hijos del header, de los costados solo*/
+    /*Acá le digo que se quede fijo el NAVBAR y luego arriba al scrolear*/
+    position: fixed;
+    top: 0;
+    z-index: 2;/*Indica la posición respecto a otro elemento*/
+}
+/*Llamo a la clase LOGO*/
+.logo{
+    height: 85%;/*Le agrego una altura específica a la imagen. Le indico que del header ocupe ese porcentaje, independientemente de si se agranda o achica el header de acuerdo a la pantalla */
+}
+/*Le aplico los mismos estilos a NAVBAR Y NAVBAR_LIST*/
+.navbar, 
+.navbar_list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Agrego espaciado entre elementos cuyo padre es flex */
+/*Este a mi no me aplica porque no tengo un carrito de compras en la derecha, sino me separaria del carrito
+.navbar{
+    gap: 150px;
+}
+*/
+.navbar_list{
+    gap: 40px;
+}
+/*Le voy a indicar que a mi contenedor NABVAR LIST y dentro de el a la etiq A le aplique los siguientes estilos*/
+.navbar_list a{
+    color: var(--text-clar);
+    font-size: 20px;
+}
+/*Uso un selector para indicarle que del padre NAVBAR LIST
+ me agarre al primer LI que tenga y su hijo directo de etiqueta A me agregue estos estilos
+ Evito agregar otra clase*/
+.navbar_list li:first-child > a{
+    color: var(--text-white);
+    font-weight: 600;/*Le agrego peso a la fuente*/
+}
+
+main{ /*Contenedor padre*/
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+}
+/*Section*/
+#hero {
+    margin-top: 90px; /*Le digo que quiero que comienze luego de que termina el header, misma altura que el hero*/
+    padding: 70px 0 50px 0; /*Pading arriba y abajo para darle espacio al contenedor que no esté aplastado*/
+    max-width: 1500px; /*fija un ANCHO MAXIMO (antess estaba 1200*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info { /*Primer contenedor*/
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50%; /*Acá le digo que del tamaño que tiene el padre solo ocupe el 50%*/
+}
+
+.hero-info h1 { /*Le agrego estilo al h1: TITULO*/
+        font-size: 40px;
+        width: 90%;
+        min-width: 500px;
+        font-weight: 600;
+        color: var(--text-clar);
+}
+.hero-info p {/*Le doy estilo al texto*/
+    font-size: 18px;
+    width: 80%;
+    color: var(--text-white);
+}
+
+.hero-info p>span { /*Le aplico estilo a mi span que es hijo directo del p qe está dentro del contenedor hero info*/
+    font-weight: 700;
+}
+
+.hero-info a {
+    color: var(--text-white);
+    background-color: var(--primary);
+    width: 120px;
+    padding: 8px 0;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.hero-card {
+    width: 275px; /*Altura del contenedor*/
+    background: var(--secondary);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-card-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*.hero-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+*/
+.hero-card-info span {
+    background-color: var(--primary);
+    text-align: center;
+    width: 50px;
+    padding: 3px 0;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+/*OTRA SECTION*/
+
+#descripcion {
+    
+        max-width: 1000px; /*fija un ANCHO MAXIMO*/
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header> <!-- Contenedor principal con la imagen -->
+    <img src="./assets/img/logock.png" alt="Logo CK" class="logo"> <!--Le agrego clase al logo para poder trabajar despues-->
+    <nav class="navbar"> <!--Etiqueta nav / Segundo contenedor -->
+        <ul class="navbar_list"><!--Lista de accesos en nav-->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Equipo</a></li> <!-- al href le pongo # porque no nos va a llevar a ningun lado-->
+            <li><a href="#">Servicios</a></li><!--Envolvemos el texto en la etiqueta A-->
+            <li><a href="#">Contacto</a></li>
+        </ul>
+       
+    </nav>
+   </header> 
+
+   <main> <!--Etiq semántica, envuelve contenido principal-->
+    <section id="hero"><!--Identificamos a la seccion con ID no con class-->
+        <div class="hero-info"> <!-- Primer contenedor-->
+            <h1>
+            Servicios Jurídicos de Kevin Caldara
+            </h1>
+            <p> Estudio Jurídico a cargo de Caldara Kevin, Abogado y Auxiliar Letrado  
+            especializado en la rama penal con más de 3 años trabajando en el Poder Judicial.
+            Asimismo, el estudio se compone del Dr. xxxx y la Dra. xxxx 
+            especializados en diversas áreas jurídicas con mas de 8 años experiencia.
+            <span> Proporcionamos asistencia legal</span> con una rápida y eficiente respuesta a las necesidades de cada cliente. </p>
+            
+            <a href="#"> Consultar</a> <!--Agrego enunciado de boton-->
+        </div>
+       
+        <div class="hero-card">
+            <img src="./assets/img/abogadodibujo.png" alt="Imagen abogado">
+       
+            <div class="hero-card-info"> <!-- Es el contenedor con la info directa de abajo de la tarjeta-->
+                <h3>Casos resueltos</h3>
+                <span>75</span>
+
+               </div>
+        </div>
+    </section>
+    
+    <section id="descripcion"> 
+        <p> Nos enfocamos en diversas áreas jurídicas prestando servicios
+             en casos de daños y perjuicios ocasionados por accidentes de tránsito,
+              lesiones culposas, aquellos relacionados con estafas, causas federales por estupefacientes.
+            Asímismo tambien nos enfocamos en temas relacionados a contratos de trabajo, derecho de familia
+        y derecho laboral </p>
+
+    </section> 
+   </main>
+</body>
+</html>
