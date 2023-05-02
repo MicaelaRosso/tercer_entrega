@@ -82,22 +82,28 @@ main{ /*Contenedor padre*/
     justify-content: center;
     color: #fff;
     width: 100%;
+    padding-left: 10%;
+    padding-right: 10%
 }
 /*Section*/
 #hero {
-    margin-top: 90px; /*Le digo que quiero que comienze luego de que termina el header, misma altura que el hero*/
-    padding: 70px 0 50px 0; /*Pading arriba y abajo para darle espacio al contenedor que no esté aplastado*/
+    margin-top: 50px; /*Le digo que quiero que comienze luego de que termina el header, misma altura que el hero*/
+    /*padding: 70px 0 50px 0;*/ /*Pading arriba y abajo para darle espacio al contenedor que no esté aplastado*/
     max-width: 1500px; /*fija un ANCHO MAXIMO (antess estaba 1200*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.full-height{
+    min-height: 100vh;
+}
+
 .hero-info { /*Primer contenedor*/
         display: flex;
         flex-direction: column;
         gap: 20px;
-        width: 50%; /*Acá le digo que del tamaño que tiene el padre solo ocupe el 50%*/
+        /*width: 50%;*/ /*Acá le digo que del tamaño que tiene el padre solo ocupe el 50%*/
 }
 
 .hero-info h1 { /*Le agrego estilo al h1: TITULO*/
@@ -156,19 +162,18 @@ main{ /*Contenedor padre*/
 .hero-card-info span {
     background-color: var(--primary);
     text-align: center;
-    width: 50px;
-    padding: 3px 0;
+    display: flex;
+    align-items: center;
+    padding: 5px;
     font-size: 15px;
-    border-radius: 10px;
+    font-weight: 500;
 }
 
 /*OTRA SECTION*/
 
 #descripcion {
-    
         max-width: 1000px; /*fija un ANCHO MAXIMO*/
         flex-direction: column;
-        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
