@@ -169,12 +169,47 @@ main{ /*Contenedor padre*/
     font-weight: 500;
 }
 
-/*OTRA SECTION*/
+/*SECTION CARDS SERVICIOS*/
 
 #descripcion {
+        padding: 30px 0;
         max-width: 1000px; /*fija un ANCHO MAXIMO*/
         flex-direction: column;
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 40px;
     }
+
+#descripcion h2 { /*Le doy formato al Titulo nª2*/
+    color: var(--text-clar);
+    margin-bottom: 0px;
+    font-size: 35px;
+}
+
+/*Aplico estilos al contenedor de las cards*/
+
+.cards-container {
+    display: flex; /*Pongo una card al lado de la otra*/
+    justify-content: space-around; /*Les dejo espacio entre cada una*/
+    align-items: flex-start;
+    flex-wrap: wrap;/*esto hace que cuando se queda sin espacio la pantalla, mande para abajo el item */
+    gap: 20px;/*separa cada card*/
+}
+
+.info-card {
+    width: 300px; /*Le  doy un alto y un ancho especìfico a todas las cards*/
+    height: 350px;
+    padding: 40px 30px; /*Espacios de cada card*/ 
+    display: flex;
+    flex-direction: column; /*Necesito que imagen, titulo e info de la card esten uno abajo del otro*/
+    align-items: center;/*Centro lo items y el texto al centro*/
+    text-align: center;
+    gap: 20px;/*espacio de contenidos de la card*/
+    background-color: var(--secondary);
+    border-radius: 40px;
+}
+
+.info-card img {
+    width:120px; /*Le ponemos ancho fijo a la imagen*/
+}
