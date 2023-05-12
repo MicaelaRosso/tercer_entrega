@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer Landing Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
 </head>
 <body>
    <header> <!-- Contenedor principal con la imagen -->
     <img src="./assets/img/logock.png" alt="Logo CK" class="logo"> <!--Le agrego clase al logo para poder trabajar despues-->
     <nav class="navbar"> <!--Etiqueta nav / Segundo contenedor -->
+        <!-- Menù Hamburguesa-->
+        <label for="menu-toggle" class="menu-label">
+            <img src="./assets/img/menu.png" alt="" class="menu-icon" />
+          </label>
+          <input type="checkbox" id="menu-toggle" />
+          <!---->
         <ul class="navbar_list"><!--Lista de accesos en nav-->
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Equipo</a></li> <!-- al href le pongo # porque no nos va a llevar a ningun lado-->
