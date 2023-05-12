@@ -29,7 +29,7 @@
 }
 /*Llamo a la etiqueta header y le aplico las caract generales*/
 header{
-    background: var(--secondary);
+    background: radial-gradient(circle, rgba(68,55,12,1) 9%, rgba(27,123,143,1) 39%, rgba(12,12,68,1) 58%);
     width: 100%;/*Indico quue el header se estire al 100%*/
     display: flex;/*Display, justify y align van siempre juntas las 3*/
     justify-content: space-between; /*Separa elementos hijos (imagen y lista)*/
@@ -263,8 +263,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    padding: 50px 0;
+    gap: 10px;
+    padding: 30px 0;
 }
 
 footer a {
@@ -277,3 +277,12 @@ footer a {
     display: flex;
     justify-content: center;
     gap: 20px;}
+
+footer p {
+    font-size: 14px;
+   /* color: var(--fire);*/
+   background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+   color: transparent;
+   background-clip: text;
+   -webkit-background-clip: text;
+}
