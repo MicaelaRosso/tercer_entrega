@@ -89,7 +89,7 @@ main{ /*Contenedor padre*/
 #hero {
     margin-top: 50px; /*Le digo que quiero que comienze luego de que termina el header, misma altura que el hero*/
     /*padding: 70px 0 50px 0;*/ /*Pading arriba y abajo para darle espacio al contenedor que no esté aplastado*/
-    max-width: 1500px; /*fija un ANCHO MAXIMO (antess estaba 1200*/
+    /*max-width: 1500px; /*fija un ANCHO MAXIMO (antess estaba 1200*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,13 +294,21 @@ footer p {
 }
 
 @media (max-width: 992px) {
+
+header {
+        max-width: 990px;
+    }
+
+main {
+    max-width: 990px;
+}
   
 
     .navbar_list{
        position: absolute;
         top: 90px;
         right: 5%;
-        width: 80%;
+        max-width: 992px;
         flex-direction: column;
         background-color: var(--secondary);
         border: 2px solid var(--bg-azul-10);
@@ -309,11 +317,12 @@ footer p {
         align-items: flex-start;
         padding: 20px 20px;
         gap: 10px;
-        /*z-index: 2;*/
+        z-index: 2;
         display: none ;
     }
 
     .menu-label {
+        
         display: flex;
         order: 2;
         cursor: pointer;
@@ -330,4 +339,20 @@ footer p {
     }
 
 
+    #hero,
+    .full-height {
+        max-width: 900px;
+    }
+
+    #descripcion {
+        max-width: 900px;
+    }
+
+    .cards-container {
+        max-width: 900px;
+    }
+
+    #contact_us {
+        max-width: 900px;
+    }
 }
