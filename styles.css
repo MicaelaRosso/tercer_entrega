@@ -26,7 +26,9 @@
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     list-style-type: none;
-}
+    border: 1px solid red;
+    }
+
 /*Llamo a la etiqueta header y le aplico las caract generales*/
 header{
     background: radial-gradient(circle, rgba(68,55,12,1) 9%, rgba(27,123,143,1) 39%, rgba(12,12,68,1) 58%);
@@ -379,7 +381,7 @@ main {
 
 
 .hero-info {
-    width: 500px;
+    width: 100%;
     align-items: center;
 }
 
@@ -387,6 +389,7 @@ main {
 width: 80%;
 min-width: unset;
 }
+
 
 #descripcion {
     max-width: 500px;
@@ -423,6 +426,9 @@ min-width: unset;
    
 }
 
+iframe {
+    max-width: 90%;
+}
 
 
 }
