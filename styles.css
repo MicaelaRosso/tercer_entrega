@@ -294,14 +294,16 @@ footer p {
 }
 
 @media (max-width: 992px) {
-
-header {
+ 
+    main {
         max-width: 990px;
     }
 
-main {
-    max-width: 990px;
-}
+header {
+        max-width: 992px;
+    }
+
+
   
 
     .navbar_list{
@@ -342,6 +344,7 @@ main {
     #hero,
     .full-height {
         max-width: 900px;
+        min-width: unset;
     }
 
     #descripcion {
@@ -355,4 +358,71 @@ main {
     #contact_us {
         max-width: 900px;
     }
+}
+
+/*MOBILE*/
+@media (max-width: 576px) {
+    header{
+        max-width: 576px;/*Indico que el header se estire al 100%*/
+        
+}
+
+main {
+    max-width: 576px;
+}
+#hero {
+    margin-top: 100px; /*Le digo que quiero que comienze luego de que termina el header, misma altura que el hero*/
+    max-width: 576px;
+   flex-wrap: wrap;
+
+}
+
+
+.hero-info {
+    width: 500px;
+    align-items: center;
+}
+
+.hero-info h1 {
+width: 80%;
+min-width: unset;
+}
+
+#descripcion {
+    max-width: 500px;
+   
+}
+#descripcion h2 {
+    width: 100%;
+    text-align: center;
+   
+}
+
+
+#contact_us {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+   
+}
+
+.datos_contacto {
+    align-items: center;
+    gap: 30px;
+}
+
+.datos_contacto h2 {
+    align-items: center;
+    text-align: unset;
+}
+
+
+.datos_list li {
+    text-align: justify;
+   
+}
+
+
+
 }
