@@ -26,7 +26,7 @@
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     list-style-type: none;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     }
 
 /*Llamo a la etiqueta header y le aplico las caract generales*/
@@ -430,5 +430,9 @@ iframe {
     max-width: 90%;
 }
 
+.footer-links {
+    flex-direction: column;
+    text-align: center;
+}
 
 }
